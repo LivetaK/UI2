@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="lt"> 
+
+	<head>
+        <meta charset="UTF-8">
+        <title> Calculator </title>
+        <meta name="autorius" content="Liveta Kavaliauskaitė">
+        <meta name="aprašymas" content="calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <form>
+
+                    <div class="display">
+                        <input type="text" name="display" readonly>
+                    </div>
+
+                        <button onclick="appendToDisplay('7')" type="button" class="light">7</button>
+                        <button onclick="appendToDisplay('8')" type="button" class="light">8</button>
+                        <button onclick="appendToDisplay('9')" type="button" class="light">9</button>
+                        <button onclick="appendToDisplay('+')" type="button" class="dark">+</button>
+                    
+                    
+                        <button onclick="appendToDisplay('4')"type="button" class="light">4</button>
+                        <button onclick="appendToDisplay('5')"type="button" class="light">5</button>
+                        <button onclick="appendToDisplay('6')"type="button" class="light">6</button>
+                        <button onclick="appendToDisplay('-')"type="button" class="dark">-</button>
+                    
+                    
+                        <button onclick="appendToDisplay('1')" type="button" class="light">1</button>
+                        <button onclick="appendToDisplay('2')" type="button" class="light">2</button>
+                        <button onclick="appendToDisplay('3')" type="button" class="light">3</button>
+                        <button onclick="appendToDisplay('X')" type="button" class="dark">X</button>
+                    
+                    
+                        <button onclick="appendToDisplay('0')" type="button" class="diff1">0</button>
+                        <button onclick="appendToDisplay('.')" type="button" class="light">.</button>
+                        <button onclick="appendToDisplay('÷')" type="button" class="dark">÷</button>
+                    
+                    
+                        <button onclick="kelimasKvadratu()" type="button" class="dark">x²</button>
+                        <button onclick="appendPowerSymbol()" type="button" class="dark">xⁿ</button>
+                        <button onclick="saknis()" type="button" class="dark">√x</button>
+                        <button onclick="calculate()" type="button" class="diff2">=</button>
+
+                    
+                        <button onclick="modulis()" type="button" class="dark">|x|</button>
+                        <button onclick="factorial()" type="button" class="dark">x!</button>
+                        <button onclick="clearDisplay()"type="button" class="dark">C</button>
+                    
+                </form>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+</html>
